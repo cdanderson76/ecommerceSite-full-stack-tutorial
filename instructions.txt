@@ -1,0 +1,32 @@
+CHALLENGE: BACKEND SETUP
+
+1. Create your root folder on the desktop, and then create your 'backend' folder and your
+   'frontend' folder.  Put a dummy file in the 'frontend' folder just so you can push it
+   to github.
+
+
+2. Create your 'package.json' file in the root directory of this project.  Install the following
+   packages:  Express, Mongoose, dotenv, jsonwebtoken, stripe, cloudinary, cookie-parser,
+   bcryptjs, ioredis (9 total)
+
+
+3. Install 'nodemon' and ensure that is installed so that it is not pushed to production.
+
+   Modify the 'package.json' file to use 'nodemon' and to have the ability to use imports.
+   Also, create your 'server.js' file in your 'backend' directory.  Create your Express app
+   (you should know how to do this without details now).
+
+   Ensure that you log something to the browser and the console to ensure the server is working
+
+
+4. In 'package.json' include a development start up script that is used for production
+   alongside the other that you created for 'nodemon'.  Use 'node' for this one.
+
+
+5. Create a '.env' file, store the port number there, and then use it inside of the
+   'server.js' file, rather than the hard-coded 5000.  Do write a conditional to hardcode
+   the port number if the port number from the '.env' file is unavailable.
+
+   
+
+Solution: https://shorturl.at/hMMoF
