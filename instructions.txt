@@ -1,0 +1,28 @@
+CHALLENGE: Controller and Starting Routes
+
+
+1. Create a folder called 'routes', and one called 'controllers' in the 'backend directory.
+   Inside of the 'routes' folder, create a file called 'auth.route.js'.
+
+
+2. Create a router in 'auth.route.js' file and have it exported.  Create an endpoint called
+   'signup' by way of the get method, and have it render to the browser 'Signup route called'.
+
+   Import this route into 'server.js' to make this happen.  Change the current 'get' route
+   to use this imported route.  Call this imported route 'authRoutes'.  Test this out by going
+   to 'http://localhost:5000/api/auth/signup' in the browser.
+
+3. Repeat the previous process for 'login' and 'logout' routes.  No need to put these into
+   'server.js' right now.  Test these routes out in the browser to ensure they come up with the
+   appropriate text.
+
+
+4. Create a file called '/controllers/auth.controller.js', and use the routes as async
+   functions into 'auth.controller.js' from 'auth.route.js'.  You WILL have to import the
+   name of the variables back into 'auth.route.js' when finished.
+
+   
+   Test out the routes in the browser to ensure that they are working.
+
+
+Solution: https://shorturl.at/hMMoF
