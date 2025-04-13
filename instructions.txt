@@ -1,0 +1,23 @@
+CHALLENGE: Database Setup
+
+
+1. Create a MongoDB database (instructions in the thumb drive). Grab the connection string,
+   and add it to the '.env' file.
+
+   NOTE: THIS MAY ALREADY BE CREATED, SO JUST CONNECT THE DATABASE
+
+
+2. Create '/backend/lib/db.js' and connect the MongoDB database.  Use a try/catch for this,
+   and console log the connection once connected.  Use 'Error connecting to MongoDB', and
+   then use the 'message' error method and exit the process gracefully to keep it from
+   crashing.
+
+   In the MongoDB URI, use the 'ecommerce_db' endpoint
+
+
+   You've completed this challenge when you see that you have successfully connected to the
+   database.
+
+
+
+Solution: https://shorturl.at/AJLQf
