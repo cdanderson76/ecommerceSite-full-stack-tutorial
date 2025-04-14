@@ -1,0 +1,45 @@
+CHALLENGE: Authentication 1
+
+
+1. Create '/backend/models/user.model.js', and create the 'userSchema' within this file.
+   Ensure that a name, email, and password is required.
+
+   With the email, ensure that it unique, lower-cased, and trimmed.
+   With the password, ensure that it has a minimum length of 6 characters
+
+
+2. Users will also have their own cart items.  Create this, and make it an array of objects.
+   With cart items, we will want there to be a default quantity of 1.  It also needs
+   to be 'a special type', the reference need to be pointing toward the 'Product' model (this
+   will be created later).
+
+
+3. Create a 'role' for the user, as they will either be an 'admin' or a 'customer', and ensure
+   that they can only have those values.
+
+   Make sure that every user is a customer by default.  Don't forget to include timestamps.
+   Create the model on top of the user and have it exported.
+
+
+4. Import 'bcrypt' and use it to hash the passwords for the users.  Use a 'try/catch' to make
+   this happen.  You're essentially using a pre-save hook to hash passwords before saving
+   them to a database.  
+   
+   
+5. Create a function that will allow you to check user's passwords against the ones stored in
+   the database.  Line this functionality up with the 'signup' function in 'auth.controller.js'.
+   Ensure that you turn this into a 'POST' method.
+
+
+6. In 'auth.controller.js' get the user items from the request body by way of the 'signup,
+   function.  Use conditionals for that if a user already exists, return error 400 stating just
+   that.  Otherwise, have the user created with all of the appropriate attributes with a
+   return of status code 201.
+
+
+7. Test this out in Postman and make sure that it works.  If done correctly, a user will be
+   created with the password hashed.
+
+   
+
+Solution: https://shorturl.at/UVoFZ
