@@ -3,6 +3,7 @@ CHALLENGE: Authentication 2
 
 1. Create a Redis database (instructions how to do so are on the thumb drive)
 
+
 2. Create '/backend/lib/redis.js' and paste in the code that you copied fromthe redis
    database.  Cut out the string in the 'Redis' method that you see there, and put it inside
    of the '.env' file.  You can call the variable 'UPSTASH_REDIS_URL'.
@@ -11,7 +12,8 @@ CHALLENGE: Authentication 2
 
    Pull this environment variable into the 'redis.js' file
 
-3. Run this file by using the following (be in the 'backend' directory):
+
+3. Run this file by using the following (be in the ROOT directory):
 
    node .\backend\lib\redis.js.
 
