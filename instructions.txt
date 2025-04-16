@@ -1,5 +1,7 @@
 CHALLENGE: Authentication 1
 
+NOTE:  YOU WILL NEED TO ADD YOUR MONGODB URI TO THE '.env' FILE BEFORE STARTING THIS CHALLENGE!
+
 
 1. Create '/backend/models/user.model.js', and create the 'userSchema' within this file.
    Ensure that a name, email, and password is required.
