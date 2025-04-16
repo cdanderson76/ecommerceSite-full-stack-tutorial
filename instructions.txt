@@ -1,0 +1,26 @@
+CHALLENGE: Authentication 3
+
+NOTE:  YOU WILL NEED TO ADD YOUR MONGODB URI TO THE '.env' FILE BEFORE STARTING THIS CHALLENGE!
+       YOU WILL NEED YOUR REDIS URL BEFORE STARTING THIS CHALLENGE!
+
+
+1. Go to the '.env' file, and use the variable 'ACCESS_TOKEN_SECRET' to store the access token
+   secret.  Use 'access_token' for now.  Do the same for 'REFRESH_TOKEN_SECRET'.  
+
+
+2. Remove the 'await redis.set' line within the 'redis.js' file.  Go into the 
+   'auth.controller.js' file and generate both the refresh token and access token.
+
+   Have the access token expire in 15 minutes (15*60*1000)
+   Have the refresh token expire in 7 days (7*24*60*60)
+
+
+3. Save the refresh and access tokens to the database and set it into the cookie.  Ensure that 
+   you set it up to prevent XSS and CSRF attacks
+
+   Modify the 201 return status to show the name, email, ID, and role of the user
+
+   Test this out in Postman by creating the previous categories.
+   
+
+Solution: https://shorturl.at/UVoFZ
